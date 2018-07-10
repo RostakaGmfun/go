@@ -25,8 +25,8 @@ const (
 //sys	Pwrite(fd int, p []byte, offset int64) (n int, err error) = SYS_PWRITE64
 //sys	Seek(fd int, offset int64, whence int) (off int64, err error) = SYS_LSEEK
 //sys	sendfile(outfd int, infd int, offset *int64, count int) (written int, err error)
-//sys	Setfsgid(gid int) (err error)
-//sys	Setfsuid(uid int) (err error)
+//sys	Setfsgid(gid int) (prev int)
+//sys	Setfsuid(uid int) (prev int)
 //sysnb	Setregid(rgid int, egid int) (err error)
 //sysnb	Setresgid(rgid int, egid int, sgid int) (err error)
 //sysnb	Setresuid(ruid int, euid int, suid int) (err error)

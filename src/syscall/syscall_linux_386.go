@@ -66,8 +66,8 @@ func Pipe2(p []int, flags int) (err error) {
 //sys	Pread(fd int, p []byte, offset int64) (n int, err error) = SYS_PREAD64
 //sys	Pwrite(fd int, p []byte, offset int64) (n int, err error) = SYS_PWRITE64
 //sys	sendfile(outfd int, infd int, offset *int64, count int) (written int, err error) = SYS_SENDFILE64
-//sys	Setfsgid(gid int) (err error) = SYS_SETFSGID32
-//sys	Setfsuid(uid int) (err error) = SYS_SETFSUID32
+//sys	Setfsgid(gid int) (prev int) = SYS_SETFSGID32
+//sys	Setfsuid(uid int) (prev int) = SYS_SETFSUID32
 //sysnb	Setregid(rgid int, egid int) (err error) = SYS_SETREGID32
 //sysnb	Setresgid(rgid int, egid int, sgid int) (err error) = SYS_SETRESGID32
 //sysnb	Setresuid(ruid int, euid int, suid int) (err error) = SYS_SETRESUID32
